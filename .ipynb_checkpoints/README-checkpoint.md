@@ -1,31 +1,56 @@
-# ![GA Logo](https://camo.githubusercontent.com/6ce15b81c1f06d716d753a61f5db22375fa684da/68747470733a2f2f67612d646173682e73332e616d617a6f6e6177732e636f6d2f70726f64756374696f6e2f6173736574732f6c6f676f2d39663838616536633963333837313639306533333238306663663535376633332e706e67) Handy Links
+# Ocular Disease Recognition
 
-#### [Zoom](https://generalassembly.zoom.us/j/96110272199?pwd=Y0E4K3hCbXAyd1lUa3ZwYTE1Nm1pdz09)
+Irina Chernyavsky, Fnu Vishal, Jose M Teodosio-Meza, Solomon Lemma, and Katie Lamberto
+
+## Problem Statement
+
+This project aims to build a convolutional neural network model that analyzes fundus images of eyes to accurately detect glaucoma and diabetic retinopathy.  
+
+## Table of contents
+1. [Executive Summary](#exec)
+2. [Background](#back)
+3. [Data Dictionary](#data)
+4. [Analysis](#analysis)
+5. [Flask App Description](#flask)
+6. [Conclusions and Recommendations](#concl)
+
+
+### 1. <a name='exec'></a>Executive Summary
+
+Our team set out to build a convolutional neural network that would classify healthy and non-healthy eyes based on their fundus images.
+
+We combined datasets from several sources and preprocessed the images.
 
 
 
-| URL                                                                                        | Meeting ID    | Password |
-| ------------------------------------------------------------------------------------------ | ------------- | -------- |
-| [Link](https://generalassembly.zoom.us/j/97391934700?pwd=Tm9kbTNvZDVWb01pMlNVOW8rVjIrdz09) | 973 9193 4700  |350414|
 
-#### [course schedule](https://docs.google.com/spreadsheets/d/1T7PqD0cowr326LASGhZa9LhhEuOweXd1iuwbGoIDdMU/edit?usp=sharing)
+### <a name='back'></a>Background
 
-#### [Google Classroom](https://classroom.google.com/u/1/c/MjI2MDY5Njg4ODgx)
+Ocular diseases affected over 142 million people over age 40 in the US in 2010, and that number has probably grown, according to Prevent Blindness America's website, [Vision Problems in the US](http://www.visionproblemsus.org/index.html).
 
-#### [Lesson Recordings](./recordings.md)
+### <a name='data'></a>Data Dictionary
 
-#### [Office Hours](./Office-Hours.md)
+This study utilized the following datasets:
 
-#### [Breakfast Hour](https://git.generalassemb.ly/DSIR-614-EC/breakfast_hour) 
 
-#### [Capstone Guidelines & Schedule](https://git.generalassemb.ly/DSIR-614-EC/capstone)
+#### Datasets
+|Dataset|Description|
+|:---|:---|
 
-#### [Graduation Requirements](./Graduation-Requirements.md)
 
-#### [Lightning Talks](./Lightning_talks.md)
+#### Features in Each Dataset
+|Feature|Type|Dataset|Description|
+|:---|:---|:---|:---|
 
-#### [Asking for Help](https://git.generalassemb.ly/DSIR-614-EC/how-to-ask-for-help/blob/master/README.md)
 
-#### [Project Overview Guidelnes](./project-overview-guidelines.md)
 
-#### [Blog Post Recommendations](https://docs.google.com/document/d/1ylRH8qqchK8pbjOssJOsSyE_snQEdGziCU261FGspuI/edit)
+Data cleaning is documented in the [Data Cleaning notebook](../code/cleaning.ipynb). (UPDATE LINK)
+
+### <a name='analysis'></a>Analysis
+
+
+### <a name='flask'></a>Flask App
+
+
+
+### <a name='concl'></a>Conclusions and Recommendations
