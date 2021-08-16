@@ -7,7 +7,7 @@ The README should include the following (from the instructions):
 -A paragraph description of the data you used, plus your data acquisition, ingestion, and cleaning steps.
 -A short description of software requirements (e.g., Pandas, Scikit-learn) required by your analysis.
 
-
+#we have 5000 pictures of data
 
 Steps for resizing images and saving the new image files:
 
