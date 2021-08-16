@@ -1,0 +1,47 @@
+Some project notes:
+
+The README should include the following (from the instructions):
+-A problem statement.
+-A succinct formulation of the question your analysis seeks to answer.
+-A table of contents, which should indicate which notebook or scripts a stakeholder should start with, and a link to an executive summary.
+-A paragraph description of the data you used, plus your data acquisition, ingestion, and cleaning steps.
+-A short description of software requirements (e.g., Pandas, Scikit-learn) required by your analysis.
+
+#we have 5000 pictures of data
+
+
+Steps for resizing images and saving the new image files:
+
+# imports
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import save_img
+from keras.preprocessing.image import img_to_array
+
+# make a for loop or a function to cycle through all our images and do the following:
+
+# load image, resized to 512x512 pixels
+img = load_img('FILENAME.jpg', target_size=(512,512))
+
+# convert image to a numpy array
+img_array = img_to_array(img)
+
+# save the image with a new filename
+# we also probably want the new files in a separate directory
+save_img('FILENAME_resized.jpg', img_array)
+
+
+
+Ideas for image preprocessing:
+-make sure we do the standard things (resize)
+-this project on kaggle suggests subtracting the average local color from the images to improve processing time -- https://www.kaggle.com/mohammadasimbluemoon/diabeticretinopathy-messidor-eyepac-preprocessed
+
+Ways to augment the data:
+-horizontal flip
+-image rotation (maybe not too much?)
+- this page has some good info on using these techniques-
+https://rstudio-pubs-static.s3.amazonaws.com/343094_6e28962e50814b3ab33d4d816a79e66e.html
+
+Feature Maps:
+This page describes how to write the code to look at the feature maps made by the CNN, which would be cool to include (especially for a visual)--
+https://www.analyticsvidhya.com/blog/2020/11/tutorial-how-to-visualize-feature-maps-directly-from-cnn-layers/
+
