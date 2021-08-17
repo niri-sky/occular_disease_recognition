@@ -5,6 +5,7 @@ from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from passlib.hash import sha256_crypt
 from functools import wraps
 
+
 app = Flask(__name__)
 
 # Configuring MySQ
@@ -27,9 +28,15 @@ def index():
     return render_template('home.html')
 
 
-# About page
+# About
 @app.route('/about')
 def about():
+    return render_template('about.html')
+
+
+# Articles
+@app.route('/articles')
+def articles():
     # Create cursor
     cur = mysql.connection.cursor()
 
@@ -47,11 +54,6 @@ def about():
     # Close connection
     cur.close()
 
-
-# Posts
-@app.route('/articles')
-def articles():
-    return render_template('articles.html', articles=Articles)
 
 
 # Single article
@@ -103,7 +105,7 @@ def register():
         flash('You are now registered and can log in', 'success')
         return redirect(url_for('login'))
 
-    return render_template('register.html', form=form)
+    return render_template('register_2.html', form=form)
 
 
 # User login
@@ -142,7 +144,7 @@ def login():
             error = 'Username not found'
             return render_template('login.html', error=error)
 
-    return render_template('login.html')
+    return render_template('login_2.html')
 
 
 # Check if user is logged in

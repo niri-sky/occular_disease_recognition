@@ -9,6 +9,7 @@ The README should include the following (from the instructions):
 
 #we have 5000 pictures of data
 
+
 Steps for resizing images and saving the new image files:
 
 # imports
