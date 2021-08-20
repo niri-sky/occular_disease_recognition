@@ -1,0 +1,19 @@
+title:  Diabetic Retinopathy Classifier
+description: Classify fundus images using deep learning
+about:
+
+
+  This is a Diabetic Retinopathy Detector that detects Referrable Diabetic Retinopathy (RDR) using Deep Learning and was built with [fastai](docs.fast.ai)
+
+
+sampleImages:
+  - name: No Retinopathy
+    url: https://i.imgur.com/bag6XaA.jpg
+  - name: Mild Nonproliferative Retinopathy
+    url: https://i.imgur.com/ZcLBb6b.jpg
+  - name: Moderate Nonproliferative Retinopathy
+    url: https://i.imgur.com/gLTumUd.jpg
+  - name: Severe Nonproliferative Retinopathy
+    url: https://i.imgur.com/Uw0rR4Y.jpg
+  - name: Proliferative Diabetic Retinopathy
+    url: https://i.imgur.com/TDUlmUa.jpg
