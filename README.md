@@ -79,6 +79,16 @@ The description of the vision problems used in the classifications models:
 
 Image data exploration and cleaning is documented in the image_EDA_and_preprocessing folder. Image re-sizing is done in the [image preprocessing notebook](./image_EDA_and_preprocessing/image_preprocessing.ipynb).
 
+#### Datasets
+|Dataset|Description|
+|:---|:---|
+|Kaggle Ocular Disease Recognition|6392 images mixed|
+|Cataract Dataset|602 images mixed|
+|RETINAL FUNDUS MULTI-DISEASE IMAGE DATASET|3200 images mixed|
+
+1. https://www.kaggle.com/andrewmvd/ocular-disease-recognition-odir5k
+2. https://www.kaggle.com/jr2ngb/cataractdataset
+3. https://ieee-dataport.org/open-access/retinal-fundus-multi-disease-image-dataset-rfmid#files
 
 ### 5. <a name="flask"></a>Flask App
 Built with:
