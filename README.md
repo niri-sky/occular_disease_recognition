@@ -25,6 +25,10 @@ We initially set out to create a multi-class model, but soon realized we needed 
 
 Convolutional Neural Network (CNN) models are documented and analyzed in the CNN_models folder. The [Image Augmentation CNN model used on eyes with Glaucoma](./CNN_models/CNN_image_aug_glauc.ipynb) contains detailed explanations of the techniques we used for these models, including discussions of image augmentation and CNN architecture, as well as discussions of feature maps and filters. The CNN model notebooks for [Diabetic Retinopathy](./CNN_models/CNN_image_aug_dr.ipynb), [Cataracts](./CNN_models/CNN_image_aug_cataracts.ipynb), and [a model that did not use image augmentation](./CNN_models/CNN_glaucoma_no_image_aug.ipynb) contain additional results.
 
+Support Vector Machine (SVM) and K-Nearest Neighbors (KNN) models that use advanced image filters such as Gaussian are explored in the notebooks [here](.SVM_KNN_models/diabetic_gauss_SVM.ipynb), [here](.SVM_KNN_models/glaucoma_gauss_SVM.ipynb), and [here](.SVM_KNN_models/glaucoma_retinopathy_no_filter_SVM_KNN.ipynb).
+
+A pdf of our presentation slide deck from 23 August 2021 is available in the presentation folder.
+
 ### 2. <a name="back"></a>Background
 
 #### Eye Diseases
@@ -109,8 +113,8 @@ Built with:
 #### How to run an app:
 The web-site was split into two flask applications for the better memory utilization: one is the main web-site and another is the prediction application. They both communicate through rerouting. Due to GitHub storage limitations, it was not possible to load the full code into the repository and deploy on Heroku. The compressed prediction application takes up 1.2GB of memory while Heroku permits only 500 MB of memory per application, and GitHub permits 1GB of memory per repository.
 Therefore, for the full code, please follow the links to the Google Cloud storage where you can download the fully functional web-site:
-- link for the main web-site: 
-- link for the prediction application: 
+- link for the main web-site:
+- link for the prediction application:
 
 1. Download the files from the Google Storage
 2. Install dependencies specified in the requirements.tx
