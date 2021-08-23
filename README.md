@@ -4,7 +4,7 @@ Fnu Vishal, Jose M Teodosio-Meza, Solomon Lemma, Irina Chernyavsky and Katie Lam
 
 ## Problem Statement
 
-This project aims to build a machines learning models that analyzes fundus images of eyes to accurately categorize them as having glaucoma, cataracts, diabetic retinopathy, or no abnormal condition.  
+The aim of the project is to build a machine learning model that will analyze and accurately categorize eye fundus images for glaucoma, cataract, or diabetic retinopathy conditions.  
 
 ## Table of contents
 1. [Executive Summary](#exec)
