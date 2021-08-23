@@ -113,7 +113,7 @@ Built with:
 #### How to run an app:
 The web-site was split into two flask applications for the better memory utilization: one is the main web-site and another is the prediction application. They both communicate through rerouting. Due to GitHub storage limitations, it was not possible to load the full code into the repository and deploy on Heroku. The compressed prediction application takes up 1.2GB of memory while Heroku permits only 500 MB of memory per application, and GitHub permits 1GB of memory per repository.
 Therefore, for the full code, please follow the links to the Google Cloud storage where you can download the fully functional web-site:
-- link for the main web-site:
+- link for the main web-site: https://drive.google.com/file/d/1EeBjwr_lla1GM1WpHBCBYOi4ZcdSKahT/view?usp=sharing
 - link for the prediction application: https://drive.google.com/file/d/11M_n6KtE7FThw80I2VZ5h-voxiopjHlI/view?usp=sharing
 
 1. Download the files from the Google Storage
