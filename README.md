@@ -115,7 +115,7 @@ Therefore, for the full code, please follow the links to the Google Cloud storag
 1. Download the files from the Google Storage
 2. Install dependencies specified in the requirements.tx
 3. Run an app
-The application was based on the work of https://reshamas.github.io/deploying-deep-learning-models-on-web-and-mobile/.
+#### The application was based on the work of https://reshamas.github.io/deploying-deep-learning-models-on-web-and-mobile/.
 
 ![](https://drive.google.com/uc?export=view&id=1VFrcDHeik4Kd5ti3cWIulYrQQJ_Cy5co)
 
