@@ -21,7 +21,7 @@ Our team set out to build a convolutional neural network that would classify hea
 
 We combined datasets from several sources and preprocessed the images.
 
-We initially set out to create a multi-class model, but soon realized we needed to switch to separate binary classification models for each disease because some of the images were of eyes that had multiple diseases. This problem became apparent when early modeling showed a large degree of confusion for how to classify many of the images. After switching to binary classification models, our accuracy increased to expected levels in the 85-95% range.
+We initially set out to create a multi-class model, but soon realized we needed to switch to separate binary classification models for each disease because some of the images were of eyes that had multiple diseases. This problem became apparent when early modeling showed a large degree of confusion for how to classify many of the images. After switching to binary classification models, our accuracy increased to expected levels in the 85-95% range over the course of training.
 
 Convolutional Neural Network (CNN) models are documented and analyzed in the CNN_models folder. The [Image Augmentation CNN model used on eyes with Glaucoma](./CNN_models/CNN_image_aug_glauc.ipynb) contains detailed explanations of the techniques we used for these models, including discussions of image augmentation and CNN architecture, as well as discussions of feature maps and filters. The CNN model notebooks for [Diabetic Retinopathy](./CNN_models/CNN_image_aug_dr.ipynb), [Cataracts](./CNN_models/CNN_image_aug_cataracts.ipynb), and [a model that did not use image augmentation](./CNN_models/CNN_glaucoma_no_image_aug.ipynb) contain additional results.
 
@@ -29,7 +29,7 @@ Convolutional Neural Network (CNN) models are documented and analyzed in the CNN
 
 #### Eye Diseases
 
-The study done by CDC indicates that approximately 12million people over the age of 40 years in the United States have visionimpairment. The number includes 1 million who are blind, 3 million who havevision impairment after correction, and 8 million who have vision impairmentdue to uncorrected refractive error. The prevalence will more than double by20250 due to the increase of diabetic and other chronic diseases. Currently, theeconomy is impacted by more than $145 billion annually because of major visionproblems among the adult population over the age of 40 years. The project builtmodels to look at the prevalence of eye diseases across the states. Sources (AmericanAcademy of Opthamology (http://www.aao.org/),  National Eye Institute (http://www.nei.nih.gov/) and (https://www.cdc.gov).
+A study done by the CDC indicates that approximately 12 million people over the age of 40 years in the United States have vision impairment. The number includes 1 million who are blind, 3 million who have vision impairment after correction, and 8 million who have vision impairment due to uncorrected refractive error. The prevalence will more than double by 2050 due to the increase of diabetic and other chronic diseases. Currently, the economy is impacted by more than $145 billion annually because of major vision problems among the adult population over the age of 40 years. This project included models built to look at the prevalence of eye diseases across the states. Sources: [American Academy of Opthamology](http://www.aao.org/),  [National Eye Institute](http://www.nei.nih.gov/) and [the CDC](https://www.cdc.gov).
 
 #### CNN Modeling of Eye Imagery
 Our team researched optimal ways to preprocess fundus images of eyes and optimal CNN architecture to get the most accurate results possible while maintaining efficiency.
@@ -64,22 +64,24 @@ This project uses the following Python libraries:
 This study utilized the following datasets:
 
 
-#### Datasets and Features
+#### Vision Problems Dataset
 
-The datasets used to create choropleth and multi-classification of the vision prevalence found from (https://data.world/datacrunch/) with the title “prevalence of vision problem in the US”. The datasets have non-modified eye diseases features such as race, sex and age and modifiable with more than 52,000 observations.
-The description of the vision problems used in the classifications models:
-- Age-Related Macular Degeneration (AMD):   disease happens as age gets older and is a leading cause of vision loss especially among people age 50 and older. 
-- Glaucoma: eye conditions that damage the optic nerve by an abnormally high pressure around the eye.
+The dataset used to create choropleths and multi-classification of the vision problem prevalence came from (https://data.world/datacrunch/) with the title “Prevalence of vision problem in the US”. The datasets have non-modified eye disease features such as race, sex and age and contain more than 52,000 observations.
+
+Description of the vision problems used in the classification models:
+- Age-Related Macular Degeneration (AMD):   This disease happens as people get older and is a leading cause of vision loss especially among people age 50 and older.
+- Glaucoma: Eye condition that damages the optic nerve by an abnormally high pressure around the eye.
 - Myopia: Nearsightedness (meaning you have a difficult time seeing things far away).
 - Cataract: “A cataract is a clouding of the eye’s natural lens, which lies behind the iris and the pupil.”
-- Diabetic Retinopathy: vision problems caused with chronically high blood sugar from diabetes that leads to damage the tiny blood vessels in the retina and distorting vision.”
+- Diabetic Retinopathy: A vision problem caused by chronically high blood sugar from diabetes that leads to damage to the tiny blood vessels in the retina, distorting a person's vision.
 - Hyperopia: Farsightedness (meaning you have a difficult time seeing things up close)
 - Vision Impairment: “A decreased ability to see to a degree that causes problems not fixable by usual means, such as glasses.”
-- Blindness: complete do not see light.
+- Blindness: Complete inability to see light.
+
+#### Eye Image Datasets
 
 Image data exploration and cleaning is documented in the image_EDA_and_preprocessing folder. Image re-sizing is done in the [image preprocessing notebook](./image_EDA_and_preprocessing/image_preprocessing.ipynb).
 
-#### Datasets
 |Dataset|Description|
 |:---|:---|
 |Kaggle Ocular Disease Recognition|6392 images mixed|
@@ -112,5 +114,8 @@ The application was based on the work of https://reshamas.github.io/deploying-de
 
 ### 6. <a name="concl"></a>Conclusions and Recommendations
 
-The CNN models used in the image augmentation achieved accuracy scores on test data of 84% for Glaucoma, and 93% for both Diabetic Retinopathy, and Cataracts. These scores are not high enough for applying in a medical diagnostic setting, but show promise because the model in the trained and tested with very limited data. We expect that adding more images to our training set and experimenting with image augmentation parameters would lead to higher accuracy scores that would potentially be useful for deployment to patients. In addition, the work revealed that multi-category classification applied to public datasets with the highest accuracy (98%) using XGB classifier. The random forest model used in the classification also shows moderate performance for multi-classification of the data with 65% accuracy. The models used in the project performs as compared with 13% of the baseline of vision problems.  
-The project successfully addressed to classify the most common eye diseases accurately. To advance the performance of the models and making them deployable would be of great benefit to eye doctors and patients because it would allow for quick and accurate eye disease diagnosis without requiring initial analysis by an eye doctor. This would help patients get diagnosed more quickly and allow eye doctors to focus on other aspects of their practice, such as performing medical procedures and treating diseased eyes. 
+The CNN models implemented with image augmentation achieved accuracy scores on test data of 84.4% for Glaucoma, 90.6% for Diabetic Retinopathy, and 89.1% for Cataracts. These scores are not high enough for applying in a medical diagnostic setting, but show promise because the model was trained and tested with very limited data. We expect that adding more images to our training set and experimenting with image augmentation parameters would lead to higher accuracy scores that would potentially be useful for deployment to patients.
+
+In addition, the work revealed that multi-category classification applied to public datasets had the highest accuracy (98%) using XGB classifier. The random forest model used in the classification also shows moderate performance for multi-classification of the data with 65% accuracy. The models used in the project perform as compared with 13% of the baseline of vision problems. The project successfully addressed to classify the most common eye diseases accurately.
+
+To advance the performance of the models and make them deployable would be of great benefit to eye doctors and patients because it would allow for quick and accurate eye disease diagnosis without requiring initial analysis by an eye doctor. This would help patients get diagnosed more quickly and allow eye doctors to focus on other aspects of their practice, such as performing medical procedures and treating diseased eyes.
