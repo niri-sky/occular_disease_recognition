@@ -31,6 +31,8 @@ Convolutional Neural Network (CNN) models are documented and analyzed in the CNN
 
 A study done by the CDC indicates that approximately 12 million people over the age of 40 years in the United States have vision impairment. The number includes 1 million who are blind, 3 million who have vision impairment after correction, and 8 million who have vision impairment due to uncorrected refractive error. The prevalence will more than double by 2050 due to the increase of diabetic and other chronic diseases. Currently, the economy is impacted by more than $145 billion annually because of major vision problems among the adult population over the age of 40 years. This project included models built to look at the prevalence of eye diseases across the states. Sources: [American Academy of Opthamology](http://www.aao.org/),  [National Eye Institute](http://www.nei.nih.gov/) and [the CDC](https://www.cdc.gov).
 
+![](https://drive.google.com/uc?export=view&id=1WGBU_MEPrqdHtSMtzDHn4q6fbfikgt4z)
+
 #### CNN Modeling of Eye Imagery
 Our team researched optimal ways to preprocess fundus images of eyes and optimal CNN architecture to get the most accurate results possible while maintaining efficiency.
 
