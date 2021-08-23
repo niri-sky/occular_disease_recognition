@@ -94,7 +94,19 @@ Image data exploration and cleaning is documented in the image_EDA_and_preproces
 
 ### 5. <a name="flask"></a>Flask App
 Built with:
-
+- Python
+- Java
+- Bootstrap
+- CSS
+- HTML
+- SQL
+- React
+To run an app:
+1. Clone the Git repository
+2. Install dependencies specified in the requirements.tx
+3. Run an app
+The application was based on the work of https://reshamas.github.io/deploying-deep-learning-models-on-web-and-mobile/.
+![](https://drive.google.com/file/d/1VFrcDHeik4Kd5ti3cWIulYrQQJ_Cy5co/view?usp=sharing)
 
 
 ### 6. <a name="concl"></a>Conclusions and Recommendations
