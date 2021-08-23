@@ -111,7 +111,7 @@ To run an app:
 3. Run an app
 The application was based on the work of https://reshamas.github.io/deploying-deep-learning-models-on-web-and-mobile/.
 
-![](https://drive.google.com/uc?export=view&id=1WGBU_MEPrqdHtSMtzDHn4q6fbfikgt4z)
+![](https://drive.google.com/uc?export=view&id=1VFrcDHeik4Kd5ti3cWIulYrQQJ_Cy5co)
 
 
 ### 6. <a name="concl"></a>Conclusions and Recommendations
