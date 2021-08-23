@@ -106,7 +106,8 @@ To run an app:
 2. Install dependencies specified in the requirements.tx
 3. Run an app
 The application was based on the work of https://reshamas.github.io/deploying-deep-learning-models-on-web-and-mobile/.
-![](https://drive.google.com/file/d/1VFrcDHeik4Kd5ti3cWIulYrQQJ_Cy5co/view?usp=sharing)
+
+![](https://drive.google.com/uc?export=view&id=1VFrcDHeik4Kd5ti3cWIulYrQQJ_Cy5co)
 
 
 ### 6. <a name="concl"></a>Conclusions and Recommendations
